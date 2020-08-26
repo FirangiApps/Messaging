@@ -1,9 +1,9 @@
 [submodule "modules/photoviewer"]
 	path = modules/photoviewer
-	url = https://github.com/devabhixda/android_frameworks_opt_photoviewer
+	url = https://github.com/OzoneApps/frameworks_photoviewer
 [submodule "modules/chips"]
 	path = modules/chips
-	url = https://github.com/devabhixda/android_frameworks_opt_chips
+	url = https://github.com/OzoneApps/frameworks_chips
 [submodule "modules/colorpicker"]
 	path = modules/colorpicker
-	url = https://github.com/devabhixda/android_frameworks_opt_colorpicker
+	url = https://github.com/OzoneApps/frameworks_colorpicker
