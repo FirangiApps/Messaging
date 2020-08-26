@@ -5,7 +5,7 @@ buildscript {
         google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.3.2'
+        classpath 'com.android.tools.build:gradle:4.0.1'
     }
 }
 
@@ -16,11 +16,9 @@ project(':modules:photoviewer') {
 
     android {
         compileSdkVersion 28
-        buildToolsVersion '28.0.3'
-
         defaultConfig {
             minSdkVersion 21
-            targetSdkVersion 28
+            targetSdkVersion 29
         }
 
         sourceSets {
@@ -40,12 +38,11 @@ project(':modules:colorpicker') {
     apply plugin: 'android-library'
 
     android {
-        compileSdkVersion 28
-        buildToolsVersion '28.0.3'
+        compileSdkVersion 29
 
         defaultConfig {
             minSdkVersion 23
-            targetSdkVersion 28
+            targetSdkVersion 29
         }
 
         sourceSets {
@@ -65,12 +62,11 @@ project(':modules:chips') {
     apply plugin: 'android-library'
 
     android {
-        compileSdkVersion 28
-        buildToolsVersion '28.0.3'
+        compileSdkVersion 29
 
         defaultConfig {
             minSdkVersion 23
-            targetSdkVersion 28
+            targetSdkVersion 29
         }
 
         sourceSets {
@@ -92,12 +88,11 @@ project(':modules:chips') {
 }
 
 android {
-    compileSdkVersion 28
-    buildToolsVersion '28.0.3'
+    compileSdkVersion 29
 
     defaultConfig {
         minSdkVersion 23
-        targetSdkVersion 28
+        targetSdkVersion 29
         versionCode 1
         versionName "1.0"
         vectorDrawables.useSupportLibrary = true
@@ -143,21 +138,19 @@ repositories {
     google()
 }
 
-final String SUPPORT_LIBS_VERSION = '28.0.0'
-
 dependencies {
     implementation project(':modules:colorpicker')
     implementation project(':modules:photoviewer')
     implementation project(':modules:chips')
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation "com.android.support:support-compat:${SUPPORT_LIBS_VERSION}"
-    implementation "com.android.support:support-media-compat:${SUPPORT_LIBS_VERSION}"
-    implementation "com.android.support:support-core-utils:${SUPPORT_LIBS_VERSION}"
-    implementation "com.android.support:support-core-ui:${SUPPORT_LIBS_VERSION}"
-    implementation "com.android.support:support-fragment:${SUPPORT_LIBS_VERSION}"
-    implementation "com.android.support:appcompat-v7:${SUPPORT_LIBS_VERSION}"
-    implementation "com.android.support:palette-v7:${SUPPORT_LIBS_VERSION}"
-    implementation "com.android.support:recyclerview-v7:${SUPPORT_LIBS_VERSION}"
-    implementation "com.android.support:support-v13:${SUPPORT_LIBS_VERSION}"
-    implementation "com.android.support:support-v4:${SUPPORT_LIBS_VERSION}"
+    implementation 'androidx.core:core:1.3.1'
+    implementation 'androidx.media:media:1.1.0'
+    implementation 'androidx.legacy:legacy-support-core-utils:1.0.0'
+    implementation 'androidx.legacy:legacy-support-core-ui:1.0.0'
+    implementation 'androidx.fragment:fragment:1.2.5'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.palette:palette:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.legacy:legacy-support-v13:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 }

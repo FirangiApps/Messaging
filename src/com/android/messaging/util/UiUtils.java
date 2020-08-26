@@ -24,10 +24,10 @@ import android.content.res.Configuration;
 import android.graphics.Color;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
 import android.text.Html;
 import android.text.Spanned;
 import android.text.TextPaint;
@@ -48,7 +48,6 @@ import com.android.messaging.Factory;
 import com.android.messaging.R;
 import com.android.messaging.ui.SnackBar;
 import com.android.messaging.ui.SnackBar.Placement;
-import com.android.messaging.ui.conversationlist.ConversationListActivity;
 import com.android.messaging.ui.SnackBarInteraction;
 import com.android.messaging.ui.SnackBarManager;
 import com.android.messaging.ui.UIIntents;
@@ -384,7 +383,7 @@ public class UiUtils {
                 activity.getResources().getDimensionPixelSize(R.dimen.action_bar_elevation) :
                 0);
         final View actionBarView = activity.getWindow().getDecorView().findViewById(
-                android.support.v7.appcompat.R.id.decor_content_parent);
+                androidx.appcompat.R.id.decor_content_parent);
         if (actionBarView != null) {
             // AppCompatActionBar has one drawable Field, which is the shadow for the action bar
             // set the alpha on that drawable manually

@@ -20,7 +20,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
@@ -30,7 +30,6 @@ import com.android.messaging.datamodel.data.ParticipantData;
 import com.android.messaging.datamodel.data.PersonItemData;
 import com.android.messaging.ui.CursorRecyclerAdapter;
 import com.android.messaging.ui.PersonItemView;
-import com.android.messaging.ui.PersonItemView.PersonItemViewListener;
 import com.android.messaging.util.PhoneUtils;
 
 /**
