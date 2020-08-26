@@ -26,7 +26,7 @@ import androidx.appcompat.widget.SwitchCompat;
 import android.util.TypedValue;
 
 /* Most methods in this file are copied from
- * v7/appcompat/src/android/support/v7/internal/widget/TintManager.java. It would be better if
+ * v7/appcompat/src/androidx.appcompat.internal/widget/TintManager.java. It would be better if
  * we could have just extended the TintManager but this is a final class that we do not have
  * access to. */
 

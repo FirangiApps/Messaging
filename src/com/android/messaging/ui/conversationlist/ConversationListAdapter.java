@@ -42,7 +42,7 @@ public class ConversationListAdapter
 
     /**
      * @see com.android.messaging.ui.CursorRecyclerAdapter#bindViewHolder(
-     * RecyclerView.ViewHolder, android.content.Context,
+     * androidx.recyclerview.widget.RecyclerView.ViewHolder, android.content.Context,
      * android.database.Cursor)
      */
     @Override
